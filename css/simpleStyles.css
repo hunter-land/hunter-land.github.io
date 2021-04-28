@@ -1,0 +1,24 @@
+.grid {
+	display: table;
+	border: none;
+    border-collapse: collapse;
+	table-layout: fixed;
+}
+.grid td {
+	padding: 0px;
+}
+
+.portfolio-box {
+	display: block;
+	overflow: hidden;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100%;
+	width: 100%
+}
+.portfolio-box > .img-fluid {
+	min-width: 100%;
+	min-height: 100%;
+}
