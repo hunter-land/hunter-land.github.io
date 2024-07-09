@@ -1,257 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYLE html>
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta name="description" content="" />
-		<meta name="author" content="" />
-		<title>Hunter Land</title>
-		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-		<!-- Google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-		<!-- Third party plugin CSS-->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="css/styles.css" rel="stylesheet" />
-		<!-- Simpler css file for more custom styles-->
-		<link href="css/simpleStyles.css" rel="stylesheet" />
+		<title>Who is Hunter Land?</title>
+		<meta name="description" content="A simple page to give you some info about me and what I do">
+		<meta name="author" content="Hunter Land">
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Software Development, C/C++, Hunter Land">
+
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" tpye="text/css" href="css/vhs.css">
+		<!--Chromatic Aberration Filter-->
+		<svg width="0" height="0">
+			<filter id="ca">
+				<feColorMatrix type="matrix"
+				result="red_"
+				values="4 0 0 0 0
+						0 0 0 0 0
+						0 0 0 0 0
+						0 0 0 1 0"/>
+				<feOffset in="red_" dx="2" dy="0" result="red"/>
+				<feColorMatrix type="matrix"
+				in="SourceGraphic"
+				result="blue_"
+				values="0 0 0 0 0
+						0 3 0 0 0
+						0 0 10 0 0
+						0 0 0 1 0"/>
+				<feOffset in="blue_" dx="-3" dy="0" result="blue"/>
+				<feBlend mode="screen" in="red" in2="blue"/>
+
+			</filter>
+		</svg>
 	</head>
-	<body id="page-top">
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">Hunter Land - Programmer</a>
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto my-2 my-lg-0">
-						<li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-					</ul>
-				</div>
+	<body>
+		<div id="title-area" class="vhs-flicker">
+			<div class="hcenter">
+				<h1 class="caps">
+					Hunter Land
+				</h1>
 			</div>
-		</nav>
-		<!-- Masthead-->
-		<header class="masthead">
-			<div class="container h-100">
-				<div class="row h-100 align-items-center justify-content-center text-center">
-					<div class="col-lg-10 align-self-end">
-						<h1 class="text-uppercase text-white font-weight-bold">Hunter Land</h1>
-						<hr class="divider my-4" />
-					</div>
-					<div class="col-lg-8 align-self-baseline">
-						<p class="text-white-75 font-weight-light mb-5">Developing tools and programs since 2009.</p>
-						<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More About Me</a>
-					</div>
-				</div>
+			<div class="hcenter">
+				<h2 class="caps">
+					Software Developer and Automator
+				</h2>
 			</div>
-		</header>
-		<!-- About-->
-		<section class="page-section bg-primary" id="about">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<h2 class="text-white mt-0">My past and present.</h2>
-						<hr class="divider light my-4" />
-						<p class="text-white-50 mb-4">
-							I started programming in 2009 with Lua after I realized I could add my own improvements to existing scripts.
-							I kept a slow but steady pace, and after about 4 years, I began creating small programs in C#.
-							Once I started college, I began learning many more languages, the fundamentals of design, best practices, and development tools,
-							which propelled me forward into making much more useful and better structured programs and libraries. I graduated in
-							June 2021 from Oregon State University with a Bachelor's Degree in Computer Science Systems and a 3.3 GPA.
-							<br><br>
-							By late September, I was approached by a company looking for someone to help automate testing as a contractor for Intel.
-							After some delays with getting equipment for me to use, I was working full time, with consistently good feedback from day 1.
-							I was able to very quickly ramp up and found my first bug within a week. I was trusted with the task of refactoring
-							a subset of the codebase to use new tooling and clean up redundancies. I have continually made suggestions to improve
-							testing and debugging of the code, which has paid dividends to the team's sanity when things go awry.
-						</p>
-						<a class="btn btn-light btn-xl js-scroll-trigger" href="#skills">Full Skill Set</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Skills-->
-		<section class="page-section" id="skills">
-			<div class="container">
-				<h2 class="text-center mt-0">Skills and knowledge</h2>
-				<hr class="divider my-4" />
-				<div class="row">
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="mt-5">
-							<!--<i class="fas fa-4x fa-gem text-primary mb-4"></i>-->
-							<img class="svg-inline--fa fa-4x mb-4 black-to-orange" src="assets/img/monitor-code.svg"/>
-							<h3 class="h4 mb-2">Programming/Scripting Languages</h3>
-							<p class="text-muted mb-0">
-								C/C++ <br>
-								C# <br>
-								Javascript <br>
-								Python <br>
-								Lua <br>
-								Ruby <br>
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="mt-5">
-							<img class="svg-inline--fa fa-4x mb-4 black-to-orange" src="assets/img/laptop-code.svg"/>
-							<h3 class="h4 mb-2">Other Languages and Frameworks</h3>
-							<p class="text-muted mb-0">
-								HTML <br>
-								CSS <br>
-								SQL <br>
-								Markdown <br>
-								.NET <br>
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="mt-5">
-							<img class="svg-inline--fa fa-4x mb-4 black-to-orange" src="assets/img/cli.svg"/>
-							<h3 class="h4 mb-2">Tools</h3>
-							<p class="text-muted mb-0">
-								Git <br>
-								SSH <br>
-								Visual Studio <br>
-								CMake <br>
-								GNUMake <br>
-								<a href="https://www.doxygen.nl">Doxygen</a> <br>
-								GCC <br>
-								G++ <br>
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="mt-5">
-							<img class="svg-inline--fa fa-4x mb-4 black-to-orange" src="assets/img/brain.svg"/>
-							<h3 class="h4 mb-2">Misc</h3>
-							<p class="text-muted mb-0">
-								Object Oriented Programming <br>
-								Networking <br>
-								Radio <br>
-								Graphics <br>
-								Artifical Inteligence <br>
-								Cryptogrophy <br>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Portfolio-->
-		<div id="portfolio" class="bg-dark">
-			<div class="container-fluid p-0">
-				<table class="grid">
-					<colgroup>
-						<col style="width: 33.3%;">
-						<col style="width: 33.4%;">
-						<col style="width: 33.3%;">
-					</colgroup>
-					<tr>
-						<td>
-							<a class="portfolio-box" href="https://github.com/hunter-land/socklib">
-								<img class="img-fluid" src="assets/img/portfolio/socklib-stock.jpg" alt="" />
-								<div class="portfolio-box-caption">
-									<div class="project-category text-white-50">Library</div>
-									<div class="project-name">C++ Wrapping of C sockets with optional extra features</div>
-								</div>
-							</a>
-						</td>
-						<!--<td>
-							<a class="portfolio-box" href="https://github.com/hunter-land/dup-img-rm">
-								<img class="img-fluid" src="assets/img/portfolio/img-comp.png" alt="" />
-								<div class="portfolio-box-caption">
-									<div class="project-category text-white-50">Program/Tool</div>
-									<div class="project-name">Duplicate Image Remover using .NET Forms</div>
-								</div>
-							</a>
-						</td>-->
-						<td>
-							<a class="portfolio-box" href="https://github.com/hunter-land/lower-user-interface">
-								<img class="img-fluid" src="assets/img/portfolio/lui-example.png" alt="" />
-								<div class="portfolio-box-caption">
-									<div class="project-category text-white-50">Library</div>
-									<div class="project-name">GUI Elements for SDL</div>
-								</div>
-							</a>
-						</td>
-						<td>
-							<a class="portfolio-box" href="capstone.html">
-								<img class="img-fluid" src="assets/img/portfolio/beavers-logo.jpg" alt="Oregon State University Mascot" />
-								<div class="portfolio-box-caption">
-									<div class="project-category text-white-50">Capstone Project</div>
-									<div class="project-name">OSU Student Transfer Guide Generator</div>
-								</div>
-							</a>
-						</td>
-					</tr>
-					<!--<tr>-->
-						<!--<td>
-							<a class="portfolio-box" href="https://github.com/hunter-land/Advent-of-Code-2020">
-								<img class="img-fluid" src="assets/img/portfolio/aoc-logo.jpg" alt="" />
-								<div class="portfolio-box-caption">
-									<div class="project-category text-white-50">Challenge</div>
-									<div class="project-name">Advent of Code 2020</div>
-								</div>
-							</a>
-						</td>-->
-					<!--</tr>-->
-				</table>
-			</div>
+			<p class="blink" style="margin-left: 15vw; margin-top: 5vh">
+				RUNNING...
+			</p>
+			<!--<script>
+				function playBeep() {
+					var beep = new Audio("snd/beep.wav");
+					beep.play();
+				}
+
+				setInterval(playBeep, 350);
+			</script>-->
 		</div>
-		<!-- Call to action-->
-		<!--<section class="page-section bg-dark text-white">
-			<div class="container text-center">
-				<h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-				<a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+		<!--<div class="hcenter">
+			<div class="stack vhs-align">
+				<p class="vhs-align-red" style="color: red;">
+					Testing text
+				</p>
+				<p class="vhs-align-green" style="color: green;">
+					Testing text
+				</p>
+				<p class="vhs-align-blue" style="color: blue;">
+					Testing text
+				</p>
 			</div>
-		</section>-->
-		<!-- Misc Links-->
-		<section class="page-section bg-dark text-white">
-			<div class="container text-center">
-				<h2 class="mb-4">Check <a href="https://github.com/hunter-land">my GitHub</a> for my other projects!</h2>
-				<h4>Many of my projects are not yet public, as they build on each other, and I want to release them together in a presentable state.</h4>
-			</div>
-		</section>
-		<!-- Contact-->
-		<section class="page-section" id="contact">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<h2 class="mt-0">Start Talking With Me!</h2>
-						<hr class="divider my-4" />
-						<p class="text-muted mb-5">Give me a call or send me an email and I will get back to you as soon as possible!</p>
+		</div>-->
+		<div class="divider-bar">
+		</div>
+		<div class="text-area">
+			<p>
+				I'm Hunter Land, a software developer with a bachelor's degree and 2.5 years of professional experience.
+				I love programming and creating all sorts of programs and libraries to help me do whatever I want done, and I enjoy looking at all the differently engineered designs surrounding daily life.
+			</p>
+			<p>
+				My first job had me doing QA for Intel for their overclocking utility, XTU.
+				In my two and a half years there, I found many bugs, wrote even more testing code, migrated/refactored our large codebase for new systems, and played an important role in setting coding and testing standards.
+				I was happy with the team and work, but increasing workloads and ever-worsening policies from much higher up forced me (and many co-workers) to quit and search for other work.
+			</p>
+			<p>
+				C/C++ is my most-used and most-liked programming language, but I have also done a lot with C#.
+				C/C++ strikes the perfect balance of low-level, fast, and organized while being old enough to be fleshed out while having many libraries available to use.
+				For ease of cross-compatability and build-tool preference, I use CMake to set up compilation and dependency resolution.
+				For this reason, less is more in the case of CMake files.
+				On my personal machines, I use both Linux and Windows, though I greatly prefer Linux as I find the "Unix Philosophy" much more usable than the monolithic Windows.
+			</p>
+			<p>
+				Aside from software development, I also mess around in related topics.
+				Namely, electronics repair and HAM radio operating.
+				Additionally, after dealing with too many questionable-at-best mechanics I focused on learning a lot about automobiles and car repair so I could get my truck back up and running (Which I was able to).
+				I find clever designs, and thus all forms of enginerring, to be very alluring, so I end up learning a lot of things about very different topics.
+			</p>
+			<br>
+			<p style="margin-bottom: 0.5em">
+				~$ ls knowledge/
+				<div class="grid" style="margin-left: 2em; white-space: nowrap">
+					<div>Automation</div>
+					<div>C</div>
+					<div>C++</div>
+					<div>C#</div>
+					<div>Continuous Development</div>
+					<div>Continuous Integration</div>
+					<div>CMake</div>
+					<div>Communication</div>
+					<div>Cryptogrophy</div>
+					<div>Fortran</div>
+					<div>GCC</div>
+					<div>GDB</div>
+					<div>Git</div>
+					<div>GitHub</div>
+					<div>Linux</div>
+					<div>MinGW</div>
+					<div>MSVC</div>
+					<div>Networking</div>
+					<div>Readable Code</div>
+					<div>Root-cause Debugging</div>
+					<div>SQLite</div>
+					<div>System-agnostic Development</div>
+					<div>Testing</div>
+					<div>Valgrind</div>
+					<div>Visual Studio</div>
+					<div>Windows</div>
+				</div>
+			</p>
+			<p style="margin-bottom: 0.5em">
+				~$ cat experience.txt
+				<div class="grid" style="margin-left: 2em;">
+					<div>
+						Automation Engineer<br>
+						Oct 2021 - Mar 2024<br>
+						Cinder Staffing / Intel<br>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-						<img class="svg-inline--fa fa-3x mb-3 text-muted black-to-gray" src="assets/img/telephone.svg" alt="Phone"/>
-						<div>+1 (458) 262-1170</div>
-					</div>
-					<div class="col-lg-4 mr-auto text-center">
-						<img class="svg-inline--fa fa-3x mb-3 text-muted black-to-gray" src="assets/img/letter.svg" alt="Email"/>
-						<a class="d-block" href="mailto:hunter.land.457@gmail.com">hunter.land.457@gmail.com</a>
-					</div>
-					<div class="col-lg-4 mr-auto text-center">
-						<img class="svg-inline--fa fa-3x mb-3 text-muted black-to-gray" src="assets/img/logo-linkedin.svg" alt="Linked-In"/>
-						<a class="d-block" href="https://www.linkedin.com/in/hunter-land">LinkedIn</a>
+			</p>
+			<p style="margin-bottom: 0.5em">
+				~$ cat references.txt
+				<div class="grid" style="margin-left: 2em;">
+					<div>
+						Devin Hero<br>
+						Automation Engineer @ Cinder Staffing / Intel<br>
+						devingreyhero at gmail dot com<br>
+						linkedin.com/in/devin-hero<br>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- Bootstrap core JS-->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Third party plugin JS-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-		<!-- Core theme JS-->
-		<script src="js/scripts.js"></script>
+			</p>
+			<p style="margin-bottom: 0.5em">
+				~$ cd projects/
+				<div class="grid" style="margin-left: 2em;">
+					<a href="https://github.com/hunter-land/socklib">socklib</a>
+					<a href="https://github.com/hunter-land/serializer">serializer</a>
+					<a href="https://github.com/hunter-land/game-of-life">Game of Life</a>
+				</div>
+			</p>
+			<p style="margin-bottom: 0.5em">
+				~$ cd projects/<span class="blink">_</span>
+			</p>
+		</div>
+		<div class="text-area" style="min-height: 5vh">
+		</div>
 	</body>
 </html>

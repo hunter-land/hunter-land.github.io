@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'VCR-OSD';
+	src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'VT-320';
+	src: url('../fonts/VT323-Regular.ttf') format('truetype');
+}
+
+* {
+	font-family: 'VCR-OSD';
+}
+
+@termbg: #141414;
+@termgreen: #33FF00;
+@termamber: #FFB000;
+@captionyellow: #FFFF00;
+
+body {
+	margin: 0px;
+	background-color: #141414;
+	color: #FFB000;
+}
+body a {
+	color: #FFB000;
+}
+
+h1 {
+	font-size: 10vh;
+}
+
+h2 {
+	font-size: 5vh;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.hcenter {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.stack {
+	position: relative;
+}
+.stack > * {
+	position: absolute;
+}
+
+.grid {
+	display: grid;
+	column-gap: 5em;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid > * {
+	flex: 1 1 0px;
+}
+
+#title-area {
+	background-image: url('../img/SonyPVW.jpg');
+	background-position: center center;
+	background-size: 100%;
+
+	padding-top: 2vh;
+	padding-bottom: 5vh;
+
+	color: #77EE55;
+}
+/*#title-area > * {
+	filter: url(#ca);
+}*/
+
+.divider-bar {
+	background-color: #363636;
+	padding-top: 7vh;
+}
+
+.text-area {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	filter: drop-shadow(0.0em 0.0em 0.05em) drop-shadow(0.0em 0.0em 1.25em) drop-shadow(0.0em 0.0em 20em);
+}
+
+footer {
+	min-height: 10vh;
+	background-image: url('../img/SonyPVW.jpg');
+	background-position: center 96.5%;
+	background-size: 100%;
+	text-align: center;
+}
